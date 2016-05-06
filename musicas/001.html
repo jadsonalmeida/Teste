@@ -8,12 +8,12 @@
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <!-- Bootstrap -->
-	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
 	    <!--Css do Google-->
-	    <link rel="stylesheet" href="icons/material.css">
-    	<link rel="stylesheet" href="css/materialize.min.css">
-    	<link   rel="stylesheet"    href="css/estilos.css">
+	    <link rel="stylesheet" href="../icons/material.css">
+    	<link rel="stylesheet" href="../css/materialize.min.css">
+    	<link   rel="stylesheet"    href="../css/estilos.css">
 
 	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,10 +30,11 @@
 		<div>
 				<div class="" id="menu">
 					<div class="valign-wrapper green  darken-2    white-text">
-					          <h5 class="titulo">Hinario</h5>
+					          <h5 class="titulo"><a href="../index.html">Hinario</a></h5>
 					</div>
 					
 						<ul class="tabs   green  darken-3">
+								<li role="presentation" class="tab"><a href="#letra" class="white-text   waves-effect    waves-light">Letra</a></li>
 								<li role="presentation" class="tab"><a href="#musicas" class="white-text   waves-effect    waves-light">Musicas</a></li>
 								<li role="presentation" class="tab"><a href="#busca"  class="white-text   waves-effect    waves-light">Buscas</a></li>
 								
@@ -41,20 +42,31 @@
 
 				</div>
 
+				<div style="overflow: auto " class="container-fluid" id="letra">
+					<h3>Doxologia</h3>
+						Justo é o Senhor em seus santos caminhos,</br>
+						Benigno em todas as suas obras. (bis)</br>
+						Perto está o Senhor,</br>
+						Perto está dos que o invocam,</br>
+						De todos que o invocam</br>
+						Em verdade. Aleluia! Aleluia!</br>
+					
+				</div>
+
+
 				<div style="overflow: auto " class="container-fluid"> 
 					<div id="musicas" class="section">
 							<select class="form-control"  onChange="if(this.selectedIndex!=0) self.location=this.options[this.selectedIndex].value">
 							  <option selected>Selecione</option>
-							  <option value="musicas/001.html">001 - Doxologia</option>
-							  <option value="musicas/002.html">002 - Reverência</option>
-							  <option value="musicas/003.html">003 - A Igreja em adoração</option>
-							  <option value="musicas/004.html">004 -  Culto à Trindade</option>
-							  <option value="musicas/005.html">005 -  Trindade adorada</option>
-							  <option value="musicas/006.html">006 -  Doxologia</option>
+							  <option value="001.html">001 - Doxologia</option>
+							  <option value="002.html">002 - Reverência</option>
+							  <option value="003.html">003 - A Igreja em adoração</option>
+							  <option value="004.html">004 -  Culto à Trindade</option>
+							  <option value="005.html">005 -  Trindade adorada</option>
+							  <option value="006.html">006 -  Doxologia</option>
 							</select>
 					</div>
 				</div>
-
 
 				<div style="overflow: auto " class="container-fluid"> 
 					<div id="busca" class="section">
@@ -75,8 +87,8 @@
 	</body>
 
 
-	        <script src="js/jquery.min.js"></script>
-	    <script src="js/materialize.min.js"></script>
-	    <script src="js/app.js"></script>
+	        <script src="../js/jquery.min.js"></script>
+	    <script src="../js/materialize.min.js"></script>
+	    <script src="../js/app.js"></script>
 
 </html>
